@@ -47,6 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .4s;
   flex-wrap: wrap;
   animation: zoomSequence 1s forwards;
 }
@@ -99,7 +100,7 @@
   }
 }
 
-.successBlub {
+/* .successBlub {
   width: 320px;
   height: 490px;
   object-fit: cover;
@@ -116,7 +117,26 @@
     transform: scale(1);
     opacity: 1;
   }
+} */
+
+.successBlub {
+  width: 320px;
+  height: 490px;
+  object-fit: cover;
+  animation: blubScale 2s infinite alternate ease-in-out; /* continuous zoom */
 }
+
+@keyframes blubScale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 @media (min-width:0px) and (max-width:768px) {
   .imges-height-banner {
