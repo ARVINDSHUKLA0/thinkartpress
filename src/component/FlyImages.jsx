@@ -14,20 +14,16 @@ export default function FlyImages() {
   const meshRefs = useRef([]);
 
   useEffect(() => {
-    if (!textures || textures.length === 0) return;
-
-    // Immediately show first 3 images
+    if (!textures || textures.length === 0) return; 
     const initialImages = textures.slice(0, 3).map(tex => ({
       texture: tex,
       x: (Math.random() - 0.5) * 40,
       y: (Math.random() - 0.5) * 40,
       z: -Math.random() * 200,
       scale: 0.5 + Math.random() * 0.5,
-      speed: 0.8 + Math.random() * 0.8
+      speed: 0.90 + Math.random() * 0.90
     }));
-    setImages(initialImages);
-
-    // Gradually add rest
+    setImages(initialImages); 
     let currentIndex = 3;
     const interval = setInterval(() => {
       if (currentIndex >= textures.length) {
@@ -42,7 +38,7 @@ export default function FlyImages() {
           y: (Math.random() - 0.5) * 40,
           z: -Math.random() * 200,
           scale: 0.5 + Math.random() * 0.5,
-          speed: 0.5 + Math.random() * 0.5
+          speed: 0.90 + Math.random() * 0.90
         }
       ]);
       currentIndex++;
@@ -53,7 +49,7 @@ export default function FlyImages() {
     meshRefs.current.forEach((mesh, i) => {
       if (!mesh) return;
       images[i].z += images[i].speed * delta * 60;
-      if (images[i].z > 50) images[i].z = -200;
+      if (images[i].z > 50) images[i].z = -120;
       mesh.position.set(images[i].x, images[i].y, images[i].z);
     });
   });
