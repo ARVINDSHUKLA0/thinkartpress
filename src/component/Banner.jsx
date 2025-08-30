@@ -29,7 +29,7 @@ const Banner = () => {
         setShowFlying(false);
         setShowSuccess(true);
         fireConfetti();
-      }, 10000);
+      }, 6000);
 
       return () => clearTimeout(timer);
     });
@@ -61,7 +61,7 @@ const Banner = () => {
 
       {showSuccess && (
         <div className="successContainerOverlay">
-          <img src="/assets/blub.png" alt="Success" className="successBlub" />
+          <img src="/assets/img/blub.png" alt="Success" className="successBlub" />
         </div>
       )}
     </div>
@@ -69,3 +69,11 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
+
+
+
+
+
+ 

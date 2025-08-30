@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="d-flex justify-content-between align-items-center py-lg-2">
             <div> 
                 <Link href="/">
-                <img className="img-fluid" src="/assets/logo.png" alt="logo" width={50} height={50} />
+                <img className="img-fluid" src="/assets/img/logo.png" alt="logo" width={50} height={50} />
                 </Link>
             </div>
  
