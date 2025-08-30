@@ -61,7 +61,7 @@ const Banner = () => {
 
       {showSuccess && (
         <div className="successContainerOverlay">
-          <img src="/assets/img/blub.png" alt="Success" className="successBlub" />
+          <img src="/assets/img/blub.avif" alt="Success" className="successBlub" />
         </div>
       )}
     </div>

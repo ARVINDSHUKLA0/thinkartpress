@@ -62,7 +62,7 @@ export default function FlyImages() {
           ref={(el) => (meshRefs.current[i] = el)}
           scale={[img.scale, img.scale, img.scale]}
         >
-          <planeGeometry args={[5, 5]} />
+          <planeGeometry args={[6, 6]} />
           <meshBasicMaterial
             transparent
             opacity={0.9}

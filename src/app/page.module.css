@@ -1,0 +1,74 @@
+ 
+.textContent {
+  word-break: break-word;
+  overflow-wrap: break-word; 
+  line-height: 1.4;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contentWrap{
+    background-color: black;
+    color: white;
+    width: 100%; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+
+}
+.customCircal{
+    height: 15px;
+    border-radius: 2px;
+    width: 15px;
+    background-color: white; 
+    cursor: pointer;
+}
+ 
+.categoryItem { 
+  cursor: pointer;
+  height: 260px;  
+  margin-bottom: 20px;
+  overflow: hidden;  
+
+}
+
+.categoryItem img {
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.categoryItem img:hover {
+  transform: scale(1.05);
+}
+ 
+.galleryModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.galleryContent {
+  width: 90%;
+  max-width: 900px;
+}
+
+.galleryClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
