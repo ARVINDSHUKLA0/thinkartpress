@@ -54,10 +54,7 @@ const ImgGallery = [
             { img: "/assets/img/Creative-imges-2.avif" },
             { img: "/assets/img/Creative-imges-3.avif" },
             { img: "/assets/img/Creative-imges-4.avif" },
-            { img: "/assets/img/Creative-imges-5.avif" },
-            { img: "/assets/img/Creative-imges-6.avif" },
-            { img: "/assets/img/Creative-imges-7.avif" },
-            { img: "/assets/img/Creative-imges-8.avif" },
+            { img: "/assets/img/Creative-imges-5.avif" }, 
 
         ],
     },

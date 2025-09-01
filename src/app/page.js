@@ -6,6 +6,7 @@ import ImgGallery from "@/Data/ImgGallery";
 import Navbar from "@/component/Navbar";
 import Banner from "@/component/Banner";
 import styles from '@/app/page.module.css';
+import Footer from "@/component/Footer";
 
 export default function Home() {
   const [showGallery, setShowGallery] = useState(false);
@@ -31,11 +32,11 @@ export default function Home() {
     <div>
       <Navbar />
       <Banner />
-      <div className="row m-0 py-lg-5 py-md-4 py-3">
+      <div className="row m-0 pt-4 ">
         {ImgGallery.map((cat) => (
           <div
             key={cat.id}
-            className="col-lg-3 col-md-4 col-sm-6 col-12 mb-md-4 mb-2 px-1"
+            className="col-lg-3 col-md-4 col-sm-6 col-12 px-1"
           > 
             <div className={styles.categoryItem} style={{ position: "relative" }}>
               <div className={`d-flex ${styles.contentWrap}`}>
@@ -77,6 +78,8 @@ export default function Home() {
           </button>
         </div>
       )}
+
+      <Footer/>
     </div>
   );
 }

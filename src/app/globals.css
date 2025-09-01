@@ -15,7 +15,9 @@
   padding: 0;
   margin: 0;
 }
-
+.dark-bg{
+  background-color: var(--foreground);
+}
 .list-style{
   list-style: none;
 }
