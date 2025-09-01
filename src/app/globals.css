@@ -1,6 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --yellowground: #BD5501;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,9 @@
 }
 .dark-bg{
   background-color: var(--foreground);
+}
+.yellow-bg{
+  background-color: var(--yellowground);
 }
 .list-style{
   list-style: none;
@@ -92,3 +96,29 @@
 }
 
 /* this is galleryModel imges end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
