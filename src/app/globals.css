@@ -98,6 +98,11 @@
 /* this is galleryModel imges end */
 
 
+@media (min-width: 0px) and (max-width: 525px) {
+   .pt-50{
+    padding: 15px 0px 0px 0px;
+   }
+}
 
 
 

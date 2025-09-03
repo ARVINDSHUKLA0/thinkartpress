@@ -39,13 +39,15 @@
  .categoryItem img {
    height: 100%;
    width: 100%;
+   display: block;
    object-fit: cover;
-
+   z-index: 1 !important;
    transition: transform 0.2s;
  }
 
  .categoryItem img:hover {
-   transform: scale(1.05);
+   transform: scale(1.05); 
+   opacity: 0.5; 
  }
 
  .galleryModal {
@@ -60,6 +62,18 @@
    align-items: center;
    z-index: 1000;
  }
+.iconDisplay {
+  position: absolute;    
+  top: 50%;              
+  left: 50%;       
+  transform: translate(-50%, -50%);
+  z-index: 10001 !important;
+  display: none;
+}
+.categoryItem:hover .iconDisplay{
+  display: block;  
+}
+
 
  .galleryContent {
    width: 90%;
@@ -82,10 +96,7 @@
    z-index: 9999999; 
  }
 
- 
- 
-
-
+  
  .expandTop {
    position: absolute;
    top: 50px;

@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="d-flex justify-content-between align-items-center py-lg-2">
             <div> 
                 <Link href="/">
-                <img className="img-fluid" src="/assets/img/logo.avif" alt="logo" width={50} height={50} />
+                <img className="img-fluid" src="/assets/img/logo.avif" alt="logo" height={50} width={50} />
                 </Link>
             </div>
  
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <li className="list-style py-2">
                   <Link
                     className="text-decoration text-white"
-                    href="#"
+                    href="/International"
                     onClick={() => setIsOpen(false)} 
                   >
                     International associates

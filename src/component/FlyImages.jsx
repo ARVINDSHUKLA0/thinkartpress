@@ -26,7 +26,7 @@ export default function FlyImages() {
               y: (Math.random() - 0.5) * 40,
               z: -Math.random() * 200,
               scale: 0.5 + Math.random() * 0.4,
-              speed: 0.8 + Math.random() * 0.8,
+              speed: 0.5 + Math.random() * 0.1,
             },
           ]);
         } catch (err) {

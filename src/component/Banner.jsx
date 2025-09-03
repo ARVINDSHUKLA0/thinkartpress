@@ -136,7 +136,7 @@ const Banner = () => {
           <video autoPlay muted loop>
             <source src="/assets/viedo/banner-viedo.mp4" type="video/mp4" />
           </video>
-          <div
+          <div  
             style={{
               position: "absolute",
               top: 0,
