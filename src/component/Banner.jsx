@@ -73,24 +73,6 @@ const Banner = () => {
         <div className="successContainerOverlay">
           <div className="row m-0 pt-4 align-items-center flex-column-reverse flex-sm-row ">
             <div className="col-lg-7 col-md-7 col-sm-6 col-12">
-              {/* <h2 className=" pt-50 pt-5 px-2 ps-md-5 text-white custom-font-size-big ">
-
-                {text.split(" ").map((word, wordIndex) => (
-                  <span key={wordIndex}>
-                    {word.split("").map((char, charIndex) => (
-                      <span
-                        key={charIndex}
-                        className={`letter ${whiteWords.includes(word) ? "white-letter" : "default-letter"
-                          }`}
-                        style={{ animationDelay: `${wordIndex * 0.3 + charIndex * 0.03}s` }}
-                      >
-                        {char}
-                      </span>
-                    ))}
-                    &nbsp;
-                  </span>
-                ))}
-              </h2> */}
               <h2 className="pt-50 pt-5 px-2 ps-md-5 text-white custom-font-size-big">
                 {text.split(" ").map((word, wordIndex) => (
                   <span key={wordIndex}>
