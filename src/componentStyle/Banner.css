@@ -81,11 +81,9 @@
   top: 0;
   left: 0;
   height: 100%;
+  display: flex;
   width: 100%;
   background-color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 10;
   animation: fadeInOverlay 0.8s forwards;
 }
@@ -138,6 +136,36 @@
     opacity: 1;
   }
 }
+.custom-font-size-big{
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 350 !important;
+
+}
+ .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(5px);
+  animation: smoothSlide 0.4s forwards;
+  animation-timing-function: ease-out;
+}
+ 
+.default-letter {
+  color: white;
+}
+ 
+.white-letter {
+  color: yellow;
+  font-weight: 600;
+}
+
+@keyframes smoothSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 @media (min-width:0px) and (max-width:768px) {
@@ -152,6 +180,28 @@
   height: 470px;
   object-fit: cover;
   animation: blubScale 1s forwards  ease-in-out;  
+}
+.bannerWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 140vh;
+}
+.custom-font-size-big{
+  font-size: 30px;
+  line-height: 40px;
+}
+.successBlub{
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 150px;
+}
+.successBlub img{
+  height: 100%;
+  width: 100%;
 }
   
 }
