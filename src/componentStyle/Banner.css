@@ -145,15 +145,15 @@
  .letter {
   display: inline-block;
   opacity: 0;
-  transform: translateY(5px);
+  transform: translateY(5px); /* slide up */
   animation: smoothSlide 0.4s forwards;
   animation-timing-function: ease-out;
 }
- 
+
 .default-letter {
   color: white;
 }
- 
+
 .white-letter {
   color: yellow;
   font-weight: 600;
@@ -165,6 +165,9 @@
     transform: translateY(0);
   }
 }
+
+
+
 
 
 
