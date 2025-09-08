@@ -152,13 +152,19 @@
 }
 
 .default-letter {
-  color: white;
+  color: white; 
 }
 
 .white-letter {
-  color: yellow;
-  font-weight: 600;
+  color: yellow; 
+  font-weight: 600;  
 }
+.word {
+  display: inline-block;     /* keep letters grouped */
+  white-space: nowrap;       /* prevent word from breaking */
+  margin-right: 6px;    
+}
+
 
 @keyframes smoothSlide {
   to {
@@ -173,6 +179,7 @@
     height: 100%;
     width: 100%;
   }
+ 
 
 .bannerWrapper {
   position: relative;
