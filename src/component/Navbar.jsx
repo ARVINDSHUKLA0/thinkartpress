@@ -38,7 +38,7 @@ const Navbar = () => {
                     href="/International"
                     onClick={() => setIsOpen(false)} 
                   >
-                    International associates
+                    International associates Portfolio 
                   </Link>
                 </li>
                 <li className="list-style py-2">

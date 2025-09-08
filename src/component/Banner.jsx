@@ -5,8 +5,8 @@ import dynamic from "next/dynamic";
 
 const FlyImages = dynamic(() => import("./FlyImages"), { ssr: false });
 const Canvas = dynamic(() => import("@react-three/fiber").then(mod => mod.Canvas), { ssr: false });
-const text = "Think Art Press international art journal aims to discover hidden artistry from around the globe.";
-const whiteWords = ["Think", "Art", "Press"]; // words jo whit
+const text = "Think Art Press. international art journal aims to discover hidden artistry from around the globe.";
+const whiteWords = ["Think", "Art", "Press."]; // words jo whit
 const Banner = () => {
   const [showFlying, setShowFlying] = useState(true);
   const [showSuccess, setShowSuccess] = useState(false);
