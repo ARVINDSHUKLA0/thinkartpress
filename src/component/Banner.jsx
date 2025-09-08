@@ -50,7 +50,8 @@ const Banner = () => {
       {showFlying && (
         <div className="video-background">
           <video autoPlay muted loop>
-            <source src="/assets/viedo/banner-viedo.mp4" type="video/mp4" />
+            <source src="/assets/viedo/viedo-banner-cutom.mp4" type="video/mp4" />
+            {/* <source src="/assets/viedo/banner-viedo.mp4" type="video/mp4" /> */}
           </video>
           <div
             style={{
