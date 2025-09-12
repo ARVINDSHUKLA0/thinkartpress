@@ -53,7 +53,7 @@ const Navbar = () => {
                 <li className="list-style py-2">
                   <Link
                     className="text-decoration text-white"
-                    href="#"
+                    href="/Competition"
                     onClick={() => setIsOpen(false)}
                   >
                     Competition
