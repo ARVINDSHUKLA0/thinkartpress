@@ -4,7 +4,7 @@ import "@/app/Competition/Competition.css"
 import { useState } from "react";
 import ImgGallery from "@/Data/ImgGallery";
 import CountUp from "react-countup";
-import React from 'react'
+import React from 'react' 
 
 const Page = () => {
     const [expanded, setExpanded] = useState(null);
@@ -26,9 +26,25 @@ const Page = () => {
     return (
         <>
             <Navbar />
-            <div className='pt-50 pb-lg-4 pb-2 dark-bg'>
-                <div className="container-fluid pt-4">
+            <div className='pt-50 pb-lg-1 pb-3  dark-bg'>
+                <div className="container-fluid pt-5">
 
+                    <div className="row m-0">
+                        <div className="col-lg-5 col-md-6 col-sm-12 col-12 text-container-center">
+                            <div>
+                            <h4 className='text-white fs-1 ps-lg-5'>Now be a part of an,  international art journal“
+                                Simply participate in an international competition, get a chance to showcase  your talent here
+                            </h4>
+                            <p className='text-white fs-15 pt-2 ps-lg-5'> Rules : Whatever you have made simply take a <br /> photo of it and mail it to <br />thinkartpress@gmail.com</p>
+                            </div>
+                        </div>
+                        <div className="col-lg-6  offset-lg-1 col-md-6 col-sm-12 col-12">
+                            <div className='competion-imges'>
+                                <img className='img-fluid' src="/assets/img/Competition.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+{/* 
                     <div className="row m-0">
                         <div className="col-lg-5 col-md-6 col-sm-12 col-12">
                             <h4 className='text-white custom-font-size-big ps-lg-5'>Now be a part of an,  international art journal “
@@ -41,6 +57,20 @@ const Page = () => {
                                 <img className='img-fluid' src="/assets/img/Competition.png" alt="" />
                             </div>
                         </div>
+                    </div> */}
+                </div>
+            </div>
+            <div className=" px-1 pt-4">
+                <div className='d-flex justify-content-between align-items-center py-lg-5 py-3 rounded-2' style={{backgroundColor : "#F7BC1D"}}>
+                    <div>
+                        <p className='m-0  fw-bold ps-1'>Competition Preschool Category 02 to 06</p>
+                    </div>
+                    <div>
+                        <span>
+                            <p className='m-0  pe-1'>
+                                  <i className="fa-solid fa-circle-plus fs-5"></i>
+                            </p>
+                        </span>
                     </div>
                 </div>
             </div>

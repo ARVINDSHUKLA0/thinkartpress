@@ -112,7 +112,7 @@
 
 .competion-imges{
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: flex !important;
     align-items: center !important;
     justify-content: end !important;
@@ -121,25 +121,27 @@
 .competion-imges img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
-@media screen and (min-width: 2000px) {
-    /* .competion-imges{
-    height: 100%;
-    width: 100%;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: end !important;
-} */
+@media screen and (min-width: 2000px) { 
+ .text-container-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 }
 
 @media screen and (max-width: 768px) {
- /* .competion-imges{
+ .competion-imges{
+        height: 100%;
+        width: 90%;  
+         padding: 0px;
+}
+.competion-imges img{
     height: 100%;
     width: 100%;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: end !important;
-} */
+    object-fit: contain;
+}
+
 }
