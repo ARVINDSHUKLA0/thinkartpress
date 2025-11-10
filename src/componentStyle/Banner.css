@@ -83,9 +83,9 @@
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column; /* already flex column on small screens */
-  justify-content: center; /* center vertically */
-  align-items: center;     /* center horizontally */
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;    
   background-color: rgb(0, 0, 0);
   z-index: 10;
   animation: fadeInOverlay 0.8s forwards;
@@ -151,13 +151,14 @@
 }
 
 .white-letter {
-  color: yellow; 
+  /* color: yellow;  */
+  color: #F7BC1D;
   font-weight: 600;  
  
 }
 .word {
-  display: inline-block;     /* keep letters grouped */
-  white-space: nowrap;       /* prevent word from breaking */
+  display: inline-block;     
+  white-space: nowrap;        
   margin-right: 6px;    
 }
 

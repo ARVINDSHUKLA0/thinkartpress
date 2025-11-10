@@ -22,7 +22,7 @@
   position: relative;
   cursor: pointer;
   height: 320px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   overflow: hidden;
 }
 
